@@ -1,0 +1,380 @@
+.background-container {
+  padding: 30px; /* Adjust the padding value as needed */
+  margin: 20px;
+}
+
+.background {    
+   background-image: url('/bg.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+ }
+
+ .topDiv {
+   display: flex;
+   flex-direction: column;
+   padding-top: 25px;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .header {
+   text-align: center;
+   font-size: 30px;
+   font-weight: 600;
+ }
+
+ .paragraph {
+   font-weight: 400;
+   max-width: 600px;
+   text-align: center;
+   line-height: 25px;
+ }
+
+ .yearPlan {
+   display: flex;
+   flex-direction: row;
+ }
+
+ .tick {
+   color: #999999;
+ }
+ 
+ .tabClass {
+   display: flex;
+   border: 1px solid rgba(204, 204, 204, 1);
+   width: max-content;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   background-color: white;
+   padding: 7px;
+   gap: 8px;
+   border-radius: 8px;
+   text-align: center;
+   color: black;
+ }
+
+ .PlanSelect{
+  border-radius: 4px;
+  padding: 9px 24px 9px 24px;
+  gap: 10px;
+  font-weight: 500;
+  width: 130px;
+  color: black;
+  animation:ease-out;
+  animation-duration: 300ms;
+ }
+ .PlanSelect:hover{
+  background: whitesmoke;
+ }
+
+ .main {
+   display: flex;
+   flex-direction: row;
+   gap: 40px;
+   border: 1px solid #DDD;
+   padding: 20px 16px;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 24px;
+   margin: 10px;
+ }
+
+ .main:hover {
+   border-color: #00498E;
+   background: linear-gradient(127.61deg, #FFFFFF 26.01%, #A3D1FB 98.99%);
+
+ }
+ .main:hover .tick {
+  color: #00498E; 
+}
+
+ .save {
+   color: #00498E;
+   border: 1px solid #00498E;
+   font-weight: 600;
+   border-radius: 8px;
+   padding: 12px;
+ }
+
+ .whiteBox {
+   border: 1px;
+   border-radius: 40px;
+   padding: 0px 30px;
+   background-color: white;
+ }
+
+ .buttonB {
+   background: #236AD4;
+   border-radius: 4px;
+   padding: 16px;
+   display: flex;
+   justify-content: center;
+   font-weight: 600;
+   font-size: 20px;
+   align-items: center;
+   width: 100%;
+ }
+
+ .box {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   padding: 17px;
+ }
+
+ .iconText {
+   font-weight: 500;
+   line-height: 24px;
+   font-size: 16px;
+ }
+
+ .Note {
+   color: rgb(104, 104, 236);
+ }
+
+ .ComboIcon {
+   font-weight: 500;
+   line-height: 30px;
+   font-size: 20px;
+  text-align: center;
+ }
+
+ .nav-tabs .nav-link.active {
+   background: linear-gradient(to right, #4399EB, #00498E);
+   color: white;
+ }
+
+ .allFeatures {
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 24px;
+   text-align: center;
+ }
+
+ .popular {
+   background: linear-gradient(184.84deg, #4399EB -24.38%, #00498E 95.52%);
+   border: 1px; 
+   border-radius: 6px;
+   color: white;
+   font-size: 12px;
+   font-weight: 600;
+   padding: 4px 8px 4px 8px;
+   text-align: center;
+   width: 80px;
+   height: 32px;
+    
+ }
+
+ .popularTop {
+   position: absolute;
+   top: -21px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: #FE7E36;
+   padding: 2px 8px;
+   border-radius: 4px;
+   font-size: 12px;
+   z-index: 1;
+   color: white;
+   font-size: 12px;
+   font-weight: 500;
+
+ }
+
+ @media (min-width:992px) and (max-width:1399px) {
+  .main {
+    gap: 18px;
+    padding: 15px;  
+  }
+  .save {
+    padding: 2px 10px;
+  }
+  .height {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+  }
+  .iconText {
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .box{
+    padding: 34px;
+  }
+
+ }
+
+ /* large tablets and small laptop screens */
+ @media (min-width:768px) and (max-width:991px) {
+   
+  .whiteBox {
+    padding: 20px 20px;   
+  }
+
+  .main {
+     gap: 10px;
+     padding: 7px;  
+   }
+
+   .save {
+     padding: 0px 5px;
+     font-size: 10px;
+     font-weight: 500;
+   }
+
+   .height {
+     font-size: 15px;
+     font-weight: 400;
+     text-align: center;
+     padding: 0;
+     margin: auto;
+   }
+
+   .iconsHeight {
+     font-size: 10px;
+     justify-content: start;
+   }
+
+   .iconText {
+     font-weight: 400;
+     line-height: 20px;
+     font-size: 12px;
+   }
+
+   .buttonB {
+     padding: 8px;
+     font-weight: 500;
+     font-size: 15px;
+   }
+
+   .smallNote {
+     font-size: 15px;
+   }
+
+   .toplogo {
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0;
+     padding: 0%;
+     gap: 16px;
+   }
+
+   .logoHeight {
+     width: 100px;
+     height: 50 px;
+   }
+
+   .popular {  
+    font-size: 9px;
+    font-weight: 600;
+    padding: 2px 4px 2px 4px;
+    text-align: center;
+  }
+ .box{
+  padding-top: 40px;
+ }
+
+ }
+
+/* tablet view */
+ @media (min-width:577px) and (max-width:767px) {
+   .toplogo {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0;
+     padding: 0%;
+     gap: 16px;
+   }
+
+   .logoHeight {
+     width: 75px;
+     height: 50px;
+   }
+
+   .iconText {
+     font-weight: 500;
+     line-height: 20px;
+     font-size: 12px;
+   }
+ }
+
+
+ /* mobile view */
+ @media (max-width:576px) {
+   .toplogo {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0;
+     padding: 0%;
+     gap: 16px;
+   }
+
+   .logoHeight {
+     width: 48px;
+     height: 37px;
+   }
+
+   .whiteBox {
+     width: 100vw;
+     border-radius: none;
+     padding: 10px;
+   }
+
+   .iconText {
+     font-weight: 500;
+     line-height: 20px;
+     font-size: 12px;
+   }
+
+   .main {
+     gap: 20px;
+     padding: 12px 8px;
+   }
+
+   .save {
+     padding: 6px;
+
+   }
+
+   .box {
+     padding: 2px;
+     margin: 2px;
+   }
+
+   .height {
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 24px;
+     margin: 0;
+   }
+
+   .header {
+     text-align: center;
+   }
+
+   .tick {
+     width: 24x;
+     height: 24px;
+   }
+
+   .buttonB {
+     padding: 12px;
+     font-weight: 600;
+     font-size: 15px;
+   }
+
+   .ComboIcon {
+    font-size: 16px; 
+  }
+ 
+
+
+ }
